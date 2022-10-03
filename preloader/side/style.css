@@ -1,0 +1,8 @@
+#wrapper{display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:150vh;}
+#wrapper>img{max-width:100%;}
+#preloader{display:flex; align-items:center; justify-content:center; width:100vw; height:100vh; position:fixed; top:0; left:0; transform:translateX(-100vw);
+    background-color:rgba(128,128,128,.97); z-index:1; transition:all 0.9s cubic-bezier(0.77, 0, 0.175, 1);}
+#preloader.show{transform:translateX(0vw);}
+#preloader_logo{transform:translateX(-100px); z-index:2; opacity:0; transition:all 0.9s cubic-bezier(0.165, 0.84, 0.44, 1);}
+#preloader #preloader_logo.show{transform:translateX(0px); opacity:1;}
+#preloader_logo img{width:150px; height:auto;}
